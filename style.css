@@ -864,130 +864,22 @@ section h2 {
     transform: translateY(-3px);
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .tech-features-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 
-/* ===== UNIVERSAL RESPONSIVE FIXES ===== */
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
 
-/* Small devices (phones under 600px) */
-@media (max-width: 600px) {
+    .project-links {
+        flex-direction: column;
+    }
 
-  html {
-    font-size: 90%;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  .main-title {
-    font-size: clamp(2rem, 8vw, 3rem);
-    letter-spacing: 0;
-  }
-
-  .home-dynamicText {
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .cssbuttons-io-button {
-    width: 100%;
-    justify-content: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 3em;
-  }
-
-  header, section, footer {
-    padding: 40px 1rem;
-  }
-
-  .nav-container {
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0.8rem;
-  }
-
-  .nav-menu {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .projects-grid, .skills-grid, .screenshots-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.2rem !important;
-  }
-
-  .project-card, .about-cta, .tech-card, .features-card {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .contact-options {
-    grid-template-columns: 1fr !important;
-  }
-
-  .contact-btn {
-    font-size: 0.9rem;
-    padding: 0.9rem 1.25rem;
-  }
-
-  .footer {
-    font-size: 0.8rem;
-    padding: 1rem 0.5rem;
-  }
-}
-
-/* Medium devices (tablets and small laptops) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .main-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-  }
-
-  section {
-    padding: 60px 2rem;
-  }
-
-  .skills-grid, .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-
-  .tech-features-row {
-    grid-template-columns: 1fr;
-  }
-
-  .project-detail {
-    padding: 2.5rem 1.5rem;
-  }
-
-  .project-links {
-    flex-direction: column;
-  }
-}
-
-/* Large devices (desktops) - keep design clean */
-@media (min-width: 1025px) {
-  main, .about-container, .project-detail {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .nav-container {
-    justify-content: space-between;
-  }
-}
-/* ===== FIX MOBILE BUTTON OVERFLOW ===== */
-@media (max-width: 400px) {
-  .cssbuttons-io-button {
-    font-size: 0.95rem;        /* slightly smaller font */
-    padding-left: 0.8em;       /* reduce left padding */
-    padding-right: 0.8em;      /* reduce right padding */
-    height: 2.8em;
-    justify-content: center;   /* center text */
-  }
-
-  .cssbuttons-io-button .icon {
-    width: 2em;                /* smaller icon width */
-    height: 2em;
-    right: 0.2em;              /* move icon closer to edge */
-  }
+    .btn-github, .btn-demo {
+        width: 100%;
+    }
 }
