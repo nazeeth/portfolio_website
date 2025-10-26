@@ -975,3 +975,19 @@ section h2 {
     justify-content: space-between;
   }
 }
+/* ===== FIX MOBILE BUTTON OVERFLOW ===== */
+@media (max-width: 400px) {
+  .cssbuttons-io-button {
+    font-size: 0.95rem;        /* slightly smaller font */
+    padding-left: 0.8em;       /* reduce left padding */
+    padding-right: 0.8em;      /* reduce right padding */
+    height: 2.8em;
+    justify-content: center;   /* center text */
+  }
+
+  .cssbuttons-io-button .icon {
+    width: 2em;                /* smaller icon width */
+    height: 2em;
+    right: 0.2em;              /* move icon closer to edge */
+  }
+}
