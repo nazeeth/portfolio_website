@@ -34,7 +34,7 @@ function typeWriter() {
 window.onload = typeWriter;
 
 
-// In your style.js
+
 document.querySelector('.cssbuttons-io-button').addEventListener('click', function(e) {
     e.preventDefault();
     document.body.classList.add('fade-out');
